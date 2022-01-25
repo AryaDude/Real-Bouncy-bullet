@@ -17,12 +17,14 @@ var countofbirdthatshoots = 0;
 
 function preload() {
     getBackgroundImg();
+    backgroundImg = loadImage(bg);
 }
 
 function setup(){
     var canvas = createCanvas(1200,800);
     engine = Engine.create();
     world = engine.world;
+    
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
